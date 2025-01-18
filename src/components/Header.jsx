@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import LOGO from "../assets/logo.png";
 import { ThemeContext } from "../context/ThemeContext";
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="home" smooth duration={500}>
           <img
-            src="src/assets/logo.png"
+            src={LOGO}
             alt="logo"
             className="w-auto h-[30px] md:h-[50px] cursor-pointer object-cover"
           />

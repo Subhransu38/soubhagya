@@ -4,7 +4,7 @@ import { FaOrcid, FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 
-const Contact = () => {
+export default function Contact() {
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -154,6 +154,4 @@ const Contact = () => {
       </div>
     </section>
   );
-};
-
-export default Contact;
+}

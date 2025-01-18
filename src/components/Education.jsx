@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Education = () => {
+export default function Education() {
   const educationDetails = [
     {
       title: "Ph. D.",
@@ -221,6 +221,4 @@ const Education = () => {
       </div>
     </section>
   );
-};
-
-export default Education;
+}

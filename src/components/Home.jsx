@@ -3,8 +3,9 @@ import { FaOrcid, FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 import { ReactTyped } from "react-typed";
+import PROFILE from "../assets/profile.jpg";
 
-const Home = () => {
+export default function Home() {
   return (
     <section
       id="home"
@@ -117,7 +118,7 @@ const Home = () => {
         >
           <div className="w-[260px] h-[260px] md:w-[400px] md:h-[400px] rounded-3xl overflow-hidden rotate-12 transition-all hover:rotate-0 duration-300">
             <img
-              src="src/assets/profile.jpg"
+              src={PROFILE}
               alt="Soubhagya Laxmi Ray"
               className="block w-full object-cover"
             />
@@ -126,6 +127,4 @@ const Home = () => {
       </div>
     </section>
   );
-};
-
-export default Home;
+}
